@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    font-family: "Teko", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: x-large;
+    letter-spacing: 1px;
+}
+.navbar{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    position: fixed;
+    top:0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(61,40,110,1) 100%);
+    z-index: 4;
+}
+.navlogo{
+    margin-left: 5%;
+    width: 15%;
+    padding: 1%;
+    h1{
+        padding: 1%;
+        border-radius: 10px;
+    }
+}
+.navtabs{
+    margin-left: 5%;
+    height: 60%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+}
+.navtabs>div{
+    height: 100%;
+    width: 60%;
+    background-color:#333333;
+    border: solid;
+    border-width: 1px 2px;
+    border-color: white;
+    border-radius: 10px;
+    margin-left: 5%;
+    text-align: center;
+    font-size: x-large;
+    cursor: pointer;
+    transition: height 0.2s,width 0.2s, transform 0.2s;
+}
+.navtabs>div:hover{
+    text-align: center;
+    z-index: 1;
+    height: 120%;
+    width: 80%;
+    transform: translateX(-7%);
+}
+.navtabs>div:active{
+    background-color: #000000;
+    height: 100%;
+    width: 60%;
+    transform: translateX(7%);
+    border-color: rgb(192, 192, 192);
+}
+.page{
+    opacity: 0;
+    animation: fade-in 2s forwards ease-in;
+    margin-top: 3%;
+}
+
+@keyframes fade-in{
+    to{
+        opacity: 1;
+    }
+}

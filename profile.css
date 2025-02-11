@@ -1,0 +1,23 @@
+.profile{
+    border: solid;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-color: #ff134e;
+    box-shadow: 10px 10px 10px #ff134eb4;
+    img{
+        background: url("./img/WhatsApp Image 2024-08-14 at 18.19.12_4c73e3ff.jpg");
+        background-size: cover;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+    }
+}
+.desc>p{
+    letter-spacing: 2px;
+}
+.about{
+    display: grid;
+    grid-template-columns: 20% 50%;
+    padding:1%;
+}

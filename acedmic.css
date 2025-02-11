@@ -1,0 +1,70 @@
+#aced{
+    margin-top: 30%;
+    padding: 1%;
+    position: absolute;
+    top:0;
+    margin-left: 30%;
+}
+#acedtxt{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    overflow-y: auto;
+    height: 100vh;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#acedtxt::-webkit-scrollbar{
+    width: 14px;
+}
+#acedtxt::-webkit-scrollbar-thumb{
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #ff134e9d;
+}
+#ball{
+    top:430px;
+    position: sticky;
+    z-index: 2;
+    height: 20px;
+    width: 20px;
+    margin-left: 5%;
+    border-radius: 25%;
+    background: linear-gradient(90deg,rgba(228,75,230,1) 30%, rgba(0,212,255,1) 100%);
+    box-shadow: 0px 2px 10px gold, 2px 0px 10px gold, -2px 0px 10px gold, 0px -2px 10px gold;
+}
+.lst{
+    margin-top: 20%;
+    display: inline-block;
+}
+.AOS{
+    opacity: 0;
+    transition: all 0.7s;
+    transform: translateX(-20%);
+    filter: blur(5px);
+}
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+
+}
+.acadyrs{
+    height: 20%;
+    width: 100%;
+}
+.horzline{
+    display: inline-block;
+    width: calc(20vw);
+    margin-left: 0vw;
+    margin-bottom: 5px;
+    height: 0;
+    border: 1px solid #ff134e;
+    filter: blur(2px);
+    z-index: 1
+}
+.gl{
+    color: goldenrod;
+    text-shadow: 4px 4px 10px gold;
+}
