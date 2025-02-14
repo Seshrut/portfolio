@@ -35,8 +35,11 @@
     box-shadow: 0px 2px 10px gold, 2px 0px 10px gold, -2px 0px 10px gold, 0px -2px 10px gold;
 }
 .lst{
-    margin-top: 20%;
-    display: inline-block;
+    margin-top: 30%;
+    p{
+        display: table-cell;
+        vertical-align: middle;
+    }
 }
 .AOS{
     opacity: 0;
@@ -51,18 +54,20 @@
 
 }
 .acadyrs{
-    height: 20%;
+    height: fit-content;
     width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 .horzline{
-    display: inline-block;
     width: calc(20vw);
-    margin-left: 0vw;
-    margin-bottom: 5px;
     height: 0;
     border: 1px solid #ff134e;
     filter: blur(2px);
-    z-index: 1
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    margin-top: 50%;
 }
 .gl{
     color: rgb(255, 112, 184);

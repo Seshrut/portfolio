@@ -37,7 +37,7 @@ body::-webkit-scrollbar-track{
 }
 .navbar{
     width: 100%;
-    height: 8%;
+    height: 9vh;
     display: flex;
     align-items: center;
     border-radius: 10px;
@@ -58,7 +58,7 @@ body::-webkit-scrollbar-track{
 .navtabs{
     margin-left: 5%;
     height: 60%;
-    width: 60%;
+    width: 200%;
     display: grid;
     grid-template-columns: auto auto auto auto;
     align-items: center;
@@ -73,7 +73,7 @@ body::-webkit-scrollbar-track{
     border-radius: 10px;
     margin-left: 5%;
     text-align: center;
-    font-size: x-large;
+    font-size: 2vw;
     cursor: pointer;
     transition: height 0.2s,width 0.2s, transform 0.2s;
 }
@@ -101,4 +101,9 @@ body::-webkit-scrollbar-track{
     to{
         opacity: 1;
     }
+}
+
+#navspace{
+    height: 9vh;
+    width: 100%;
 }

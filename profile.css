@@ -13,11 +13,14 @@
         width: 100px;
     }
 }
+.desc{
+    text-align: center;
+}
 .desc>p{
     letter-spacing: 2px;
 }
 .about{
     display: grid;
-    grid-template-columns: 20% 50%;
+    grid-template-columns: 20% 80%;
     padding:1%;
 }
