@@ -1,240 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./navbar.css">
-    <link rel="stylesheet" href="./acedmic.css">
-    <link rel="stylesheet" href="./profile.css">
-    <link rel="stylesheet" href="./card.css">
-    <link rel="stylesheet" href="./socials.css">
-    <script defer src="./render.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="./navbar.css">
+	<link rel="stylesheet" href="./acedmic.css">
+	<link rel="stylesheet" href="./profile.css">
+	<link rel="stylesheet" href="./card.css">
+	<link rel="stylesheet" href="./socials.css">
+	<script defer src="./render.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
 </head>
+
 <body text="white">
-    <div class="navbar">
-        <div class="navlogo">
-                <h1 class="gl" style="cursor: pointer;" onclick="window.scrollTo({top:0,behavior:'smooth'})">SJ</h1>
-        </div>
-        <div class="navtabs">
-                <div onclick="window.scrollTo({top:(document.getElementById('about').getBoundingClientRect().top + window.scrollY-45), behavior:'smooth'})">About</div>
-                <div onclick="window.scrollTo({top:(document.getElementById('acedtxt').getBoundingClientRect().top + window.scrollY-45), behavior:'smooth'})">Acedemics</div>
-                <div onclick="window.scrollTo({top:(document.getElementById('project').getBoundingClientRect().top + window.scrollY-45), behavior:'smooth'})">Projects</div>
-                <div onclick="window.scrollTo({top:(document.getElementById('contact').getBoundingClientRect().top + window.scrollY-45), behavior:'smooth'})">contact Me</div>
-        </div>
-    </div>
-    <div id="navspace">
-    </div>
-    <div class="page" id="page">
-        <div class="about" id="about">
-            <div class="profile" style="margin-top: 1%;margin-left: 1%;">
-                <img>
-            </div>
-            <div class="desc">
-                <h1>
-                    Seshrut Jain
-                </h1>
-                <p>
-                    <i>"The most important skill for a computer scientist is <i class="gl">problem-solving.</i><br>
-                        Even if you don't know all the details of the technology you are using, <br>
-                        if you can solve the problem, you can figure out how to do it."</i>
-                        <h5>~Steve Jobs</h5>
-                </p>
-            </div>
-        </div>
-        <div id="acedtxt">
-            <div id="ball"></div>
-            <h1><center><u>Acedemic</u> <u>History</u></center></h1>
-            <svg height="1020" width="100" style="position: sticky;margin-left:5%">
-                <line x1="10%" x2="10%" y1="37%" y2="100%" style="stroke: rgb(155, 0, 52);stroke-width: 14px; filter:blur(3px);z-index:1"/>
-            </svg>
-            <div id="aced">
-                <div class="acadyrs">
-                    <div class="horzline AOS"></div>
-                    <p class="AOS lst">
-                        Vellore Institute of Technology Vellore<br>
-                        Semester: 2<sup>nd</sup><br>
-                        Current CGPA: <i class="gl">9.21</i>
-                    </p>
-                </div>
-                <div class="acadyrs">
-                    <div class="horzline AOS"></div>
-                    <p class="AOS lst">
-                        Eon Gyanankur School- kharadi, Pune [CBSE]<br>
-                        2024<br>
-                        12<sup>th</sup> Boards: <i class="gl">77.2%</i><br>
-                    </p>
-                </div>
-                <div class="acadyrs">
-                    <div class="horzline AOS"></div>
-                    <p class="AOS lst" style="margin-bottom: 20%;">
-                        Sanskriti School- Wagholi, Pune [CBSE]<br>
-                        2022<br>
-                        10<sup>th</sup> Boards: <i class="gl">90%</i><br>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div id="project">
-            <center><h1 style="font-size: xx-large; padding-bottom: 5%;"><u>Projects</u></h1></center>
-                <div id="projects">
-                    <div class="card" id="card1" onclick="window.open('https://github.com/Seshrut/AIminebot','_blank').focus()">
-                        <div class="content">
-                        <div class="back">
-                            <div class="back-content">
-                            <svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px" width="50px" fill="#ffffff">
-                    
-                            <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-                    
-                            <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-                    
-                            <g id="SVGRepo_iconCarrier">
-                                <img>
-                            </g>
-                    
-                            </svg>
-                            <strong>AIMineBot</strong>
-                            </div>
-                        </div>
-                        <div class="front">
-                            
-                            <div class="img">
-                            <div class="circle">
-                            </div>
-                            <div class="circle" id="right">
-                            </div>
-                            <div class="circle" id="bottom">
-                            </div>
-                            </div>
-                    
-                            <div class="front-content">
-                            <small class="badge gl">Javascript</small>
-                            <small class="badge gl">Electron</small>
-                            <div class="description">
-                                <div class="title">
-                                <p class="title">
-                                    A bot which takes command from user via chat and performs action in minecraft
-                                </p>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="card" id="card2" onclick="window.open('https://github.com/Seshrut/CamPyCad','_blank').focus()">
-                        <div class="content">
-                        <div class="back">
-                            <div class="back-content">
-                            <svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px" width="50px" fill="#ffffff">
-                    
-                            <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-                    
-                            <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-                    
-                            <g id="SVGRepo_iconCarrier">
-                                <img>
-                            </g>
-                    
-                            </svg>
-                            <strong>CamPyCad</strong>
-                            </div>
-                        </div>
-                        <div class="front">
-                            
-                            <div class="img">
-                            <div class="circle">
-                            </div>
-                            <div class="circle" id="right">
-                            </div>
-                            <div class="circle" id="bottom">
-                            </div>
-                            </div>
-                    
-                            <div class="front-content">
-                            <small class="badge gl">Python</small>
-                            <small class="badge gl">Open-CV</small>
-                            <small class="badge gl">ML</small>
-                            <div class="description">
-                                <div class="title">
-                                <p class="title">
-                                    A ML model to resolve electronic circuits drawn by hands.
-                                </p>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="card" id="card3" onclick="window.open('https://github.com/Seshrut/devilin','_blank').focus()">
-                        <div class="content">
-                        <div class="back">
-                            <div class="back-content">
-                            <svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px" width="50px" fill="#ffffff">
-                    
-                            <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-                    
-                            <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-                    
-                            <g id="SVGRepo_iconCarrier">
-                                <img>
-                            </g>
-                    
-                            </svg>
-                            <strong>Devilin</strong>
-                            </div>
-                        </div>
-                        <div class="front">
-                            
-                            <div class="img">
-                            <div class="circle">
-                            </div>
-                            <div class="circle" id="right">
-                            </div>
-                            <div class="circle" id="bottom">
-                            </div>
-                            </div>
-                    
-                            <div class="front-content">
-                            <small class="badge gl">Javascript</small>
-                            <small class="badge gl">Electron</small>
-                            <small class="badge gl">LLM API</small>
-                            <div class="description">
-                                <div class="title">
-                                <p class="title">
-                                    A programming bot that fixes bugs generated by itself.
-                                </p>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        <div id="contact">
-            <div class="cardsocial">
-                <h1><u>Socials</u> :</h1><br>
-                <a href="https://www.instagram.com/seshrut_jain" target="_blank" class="socialContainer containerOne">
-                  <svg class="socialSvg instagramSvg" viewBox="0 0 16 16"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> </svg>
-                </a>
-                
-                <a href="https://x.com/seshrut" target="_blank" class="socialContainer containerTwo">
-                  <svg class="socialSvg twitterSvg" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/> </svg>              </a>
-                  
-                <a href="https://www.linkedin.com/in/seshrut/" class="socialContainer containerThree">
-                  <svg class="socialSvg linkdinSvg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
-                </a>
-                
-                <a href="mailto:seshrutjain@gmail.com" class="socialContainer containerFour">
-                  <svg class="socialSvg mailSvg" viewBox="0 0 16 16"> <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/> </svg>
-                </a>
-              </div>             
-              
-              
-        </div>
-    </div>
+	<div class="navbar">
+		<div class="navlogo">
+			<h1 class="gl" style="cursor: pointer;" onclick="window.scrollTo({top:0,behavior:'smooth'})">SJ</h1>
+		</div>
+		<div class="navtabs">
+			<div
+				onclick="window.scrollTo({top:(document.getElementById('about').getBoundingClientRect().top + window.scrollY-45), behavior:'smooth'})">
+				About</div>
+			<div
+				onclick="window.scrollTo({top:(document.getElementById('acedtxt').getBoundingClientRect().top + window.scrollY-45), behavior:'smooth'})">
+				Acedemics</div>
+			<div
+				onclick="window.scrollTo({top:(document.getElementById('project').getBoundingClientRect().top + window.scrollY-45), behavior:'smooth'})">
+				Projects</div>
+			<div
+				onclick="window.scrollTo({top:(document.getElementById('contact').getBoundingClientRect().top + window.scrollY-45), behavior:'smooth'})">
+				contact Me</div>
+		</div>
+	</div>
+	<div id="navspace">
+	</div>
+	<div class="page" id="page">
+		<div class="about" id="about">
+			<div class="profile" style="margin-top: 1%;margin-left: 1%;">
+				<img>
+			</div>
+			<div class="desc">
+				<h1>
+					Seshrut Jain
+				</h1>
+				<p>
+					<i>"The most important skill for a computer scientist is <i class="gl">problem-solving.</i><br>
+						Even if you don't know all the details of the technology you are using, <br>
+						if you can solve the problem, you can figure out how to do it."</i>
+				<h5>~Steve Jobs</h5>
+				</p>
+			</div>
+		</div>
+		<div id="acedtxt">
+			<!-- <div id="ball"></div> -->
+			<h1>
+				<center><u>Acedemic</u> <u>History</u></center>
+			</h1>
+			<!-- <svg height="1020" width="100" style="position: sticky;margin-left:5%"> -->
+			<!--     <line x1="10%" x2="10%" y1="37%" y2="100%" style="stroke: rgb(155, 0, 52);stroke-width: 14px; filter:blur(3px);z-index:1"/> -->
+			<!-- </svg> -->
+			<div id="aced">
+				<div class="acadyrs">
+					<div class="AOS" id="img1">
+						<img>
+					</div>
+					<p class="AOS lst">
+						Vellore Institute of Technology Vellore<br>
+						Semester: 2<sup>nd</sup><br>
+						Current CGPA: <i class="gl">9.21</i>
+					</p>
+				</div>
+				<div class="acadyrs">
+					<div class="AOS" id="img2">
+						<img>
+					</div>
+					<p class="AOS lst">
+						Eon Gyanankur School- kharadi, Pune [CBSE]<br>
+						2024<br>
+						12<sup>th</sup> Boards: <i class="gl">77.2%</i><br>
+					</p>
+				</div>
+				<div class="acadyrs">
+					<div class="AOS" id="img3">
+						<img>
+					</div>
+					<p class="AOS lst" style="margin-bottom: 20%;">
+						Sanskriti School- Wagholi, Pune [CBSE]<br>
+						2022<br>
+						10<sup>th</sup> Boards: <i class="gl">90%</i><br>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="project">
+			<center>
+				<h1 style="font-size: xx-large; padding-bottom: 5%;"><u>Projects</u></h1>
+			</center>
+			<div id="projects">
+				<div class="card" id="card1"
+					onclick="window.open('https://github.com/Seshrut/AIminebot','_blank').focus()">
+					<div class="content">
+						<div class="back">
+							<div class="back-content">
+								<svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
+									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px" width="50px"
+									fill="#ffffff">
+
+									<g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+
+									<g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+
+									<g id="SVGRepo_iconCarrier">
+										<img>
+									</g>
+
+								</svg>
+								<strong>AIMineBot</strong>
+							</div>
+						</div>
+						<div class="front">
+
+							<div class="img">
+								<div class="circle">
+								</div>
+								<div class="circle" id="right">
+								</div>
+								<div class="circle" id="bottom">
+								</div>
+							</div>
+
+							<div class="front-content">
+								<small class="badge gl">Javascript</small>
+								<small class="badge gl">Electron</small>
+								<div class="description">
+									<div class="title">
+										<p class="title">
+											A bot which takes command from user via chat and performs action in
+											minecraft
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card" id="card2"
+					onclick="window.open('https://github.com/Seshrut/CamPyCad','_blank').focus()">
+					<div class="content">
+						<div class="back">
+							<div class="back-content">
+								<svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
+									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px" width="50px"
+									fill="#ffffff">
+
+									<g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+
+									<g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+
+									<g id="SVGRepo_iconCarrier">
+										<img>
+									</g>
+
+								</svg>
+								<strong>CamPyCad</strong>
+							</div>
+						</div>
+						<div class="front">
+
+							<div class="img">
+								<div class="circle">
+								</div>
+								<div class="circle" id="right">
+								</div>
+								<div class="circle" id="bottom">
+								</div>
+							</div>
+
+							<div class="front-content">
+								<small class="badge gl">Python</small>
+								<small class="badge gl">Open-CV</small>
+								<small class="badge gl">ML</small>
+								<div class="description">
+									<div class="title">
+										<p class="title">
+											A ML model to resolve electronic circuits drawn by hands.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card" id="card3"
+					onclick="window.open('https://github.com/Seshrut/devilin','_blank').focus()">
+					<div class="content">
+						<div class="back">
+							<div class="back-content">
+								<svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
+									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px" width="50px"
+									fill="#ffffff">
+
+									<g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+
+									<g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+
+									<g id="SVGRepo_iconCarrier">
+										<img>
+									</g>
+
+								</svg>
+								<strong>Devilin</strong>
+							</div>
+						</div>
+						<div class="front">
+
+							<div class="img">
+								<div class="circle">
+								</div>
+								<div class="circle" id="right">
+								</div>
+								<div class="circle" id="bottom">
+								</div>
+							</div>
+
+							<div class="front-content">
+								<small class="badge gl">Javascript</small>
+								<small class="badge gl">Electron</small>
+								<small class="badge gl">LLM API</small>
+								<div class="description">
+									<div class="title">
+										<p class="title">
+											A programming bot that fixes bugs generated by itself.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="contact">
+			<div class="cardsocial">
+				<h1><u>Socials</u> :</h1><br>
+				<a href="https://www.instagram.com/seshrut_jain" target="_blank" class="socialContainer containerOne">
+					<svg class="socialSvg instagramSvg" viewBox="0 0 16 16">
+						<path
+							d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+						</path>
+					</svg>
+				</a>
+
+				<a href="https://x.com/seshrut" target="_blank" class="socialContainer containerTwo">
+					<svg class="socialSvg twitterSvg" viewBox="0 0 16 16">
+						<path
+							d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+					</svg> </a>
+
+				<a href="https://www.linkedin.com/in/seshrut/" class="socialContainer containerThree">
+					<svg class="socialSvg linkdinSvg" viewBox="0 0 448 512">
+						<path
+							d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+						</path>
+					</svg>
+				</a>
+
+				<a href="mailto:seshrutjain@gmail.com" class="socialContainer containerFour">
+					<svg class="socialSvg mailSvg" viewBox="0 0 16 16">
+						<path
+							d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+					</svg>
+				</a>
+			</div>
+
+
+		</div>
+	</div>
 </body>
+
 </html>
