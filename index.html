@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
 	<link rel="stylesheet" href="./navbar.css">
+	<link rel="stylesheet" href="./techstack.css">
 	<link rel="stylesheet" href="./acedmic.css">
 	<link rel="stylesheet" href="./profile.css">
 	<link rel="stylesheet" href="./card.css">
@@ -23,16 +24,19 @@
 		</div>
 		<div class="navtabs">
 			<div
-				onclick="window.scrollTo({top:(document.getElementById('about').getBoundingClientRect().top + window.scrollY-45), behavior:'smooth'})">
+				onclick="window.scrollTo({top:(document.getElementById('about').getBoundingClientRect().top + window.scrollY-60), behavior:'smooth'})">
 				About</div>
 			<div
-				onclick="window.scrollTo({top:(document.getElementById('acedtxt').getBoundingClientRect().top + window.scrollY-45), behavior:'smooth'})">
+				onclick="window.scrollTo({top:(document.getElementById('techstack').getBoundingClientRect().top + window.scrollY-60), behavior:'smooth'})">
+				TechStack</div>
+			<div
+				onclick="window.scrollTo({top:(document.getElementById('acedtxt').getBoundingClientRect().top + window.scrollY-60), behavior:'smooth'})">
 				Acedemics</div>
 			<div
-				onclick="window.scrollTo({top:(document.getElementById('project').getBoundingClientRect().top + window.scrollY-45), behavior:'smooth'})">
+				onclick="window.scrollTo({top:(document.getElementById('project').getBoundingClientRect().top + window.scrollY-60), behavior:'smooth'})">
 				Projects</div>
 			<div
-				onclick="window.scrollTo({top:(document.getElementById('contact').getBoundingClientRect().top + window.scrollY-45), behavior:'smooth'})">
+				onclick="window.scrollTo({top:(document.getElementById('contact').getBoundingClientRect().top + window.scrollY-60), behavior:'smooth'})">
 				contact Me</div>
 		</div>
 	</div>
@@ -53,6 +57,39 @@
 						if you can solve the problem, you can figure out how to do it."</i>
 				<h5>~Steve Jobs</h5>
 				</p>
+				<p style="margin-top:5%;">
+					Welcome to my portfolio webpage,<br>
+					This is just a basic html-css page to display my academics and projects 😅<br>
+					my first interraction with programming language was with HTML in 5<sup>th</sup>STD,<br>
+					As a beginer, I started learning python when I was 15<br>
+					and since then I decided to go fourth with my interest in CSE.<br><br>
+					<i class="gl">I am and always will keep learning.</i> 😊
+				</p>
+			</div>
+		</div>
+		<div id="techstack">
+			<h1>
+				<center><u>Tech</u> <u>Stack</u></center>
+			</h1>
+			Languages:
+			<div id="languages">
+				<div class="stack">
+					<p style="background-color:rgba(255, 205, 0, 0.8)">Javascript</p>
+					<p style="background-color:rgba(77, 148, 255, 0.8)">Python</p>
+					<p style="background-color:rgba(255, 0, 0, 0.8)">Java</p>
+					<p style="background-color:rgba(0, 0, 255, 0.8);">C/C++</p>
+				</div>
+			</div>
+			Libraries:
+			<div id="libraries">
+				<div class="stack">
+					<p>Pytorch</p>
+					<p>OpenCV</p>
+					<p>ElectronJS</p>
+					<p>Numpy</p>
+					<p>Pandas</p>
+					<p>SciKit-Learn</p>
+				</div>
 			</div>
 		</div>
 		<div id="acedtxt">
@@ -101,147 +138,58 @@
 				<h1 style="font-size: xx-large; padding-bottom: 5%;"><u>Projects</u></h1>
 			</center>
 			<div id="projects">
-				<div class="card" id="card1"
-					onclick="window.open('https://github.com/Seshrut/AIminebot','_blank').focus()">
-					<div class="content">
-						<div class="back">
-							<div class="back-content">
-								<svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
-									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px" width="50px"
-									fill="#ffffff">
-
-									<g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-
-									<g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-
-									<g id="SVGRepo_iconCarrier">
-										<img>
-									</g>
-
-								</svg>
-								<strong>AIMineBot</strong>
-							</div>
+				<div class="flip-card">
+					<div class="flip-card-inner"
+						onclick="window.open('https://github.com/Seshrut/CamPyCad','_blank').focus()">
+						<div class="flip-card-front AOS">
+							<img src="img/campycad.png" alt="Avatar">
+							CamPyCad
 						</div>
-						<div class="front">
-
-							<div class="img">
-								<div class="circle">
-								</div>
-								<div class="circle" id="right">
-								</div>
-								<div class="circle" id="bottom">
-								</div>
-							</div>
-
-							<div class="front-content">
-								<small class="badge gl">Javascript</small>
-								<small class="badge gl">Electron</small>
-								<div class="description">
-									<div class="title">
-										<p class="title">
-											A bot which takes command from user via chat and performs action in
-											minecraft
-										</p>
-									</div>
-								</div>
-							</div>
+						<div class="flip-card-back">
+							<img src="img/campycad.png" alt="Avatar">
+							Tools
+							<p class="badge gl">Pytorch</p>
+							<p class="badge">OpenCV</p>
+							<p class="badge">Python</p>
+							<p style="font-size: 12px;"> under develoupment </p>
 						</div>
 					</div>
 				</div>
-				<div class="card" id="card2"
-					onclick="window.open('https://github.com/Seshrut/CamPyCad','_blank').focus()">
-					<div class="content">
-						<div class="back">
-							<div class="back-content">
-								<svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
-									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px" width="50px"
-									fill="#ffffff">
-
-									<g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-
-									<g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-
-									<g id="SVGRepo_iconCarrier">
-										<img>
-									</g>
-
-								</svg>
-								<strong>CamPyCad</strong>
-							</div>
+				<div class="flip-card">
+					<div class="flip-card-inner"
+						onclick="window.open('https://github.com/Seshrut/devilin','_blank').focus()">
+						<div class="flip-card-front AOS">
+							<img src="img/devilin.ico" alt="Avatar">
+							Devilin
 						</div>
-						<div class="front">
-
-							<div class="img">
-								<div class="circle">
-								</div>
-								<div class="circle" id="right">
-								</div>
-								<div class="circle" id="bottom">
-								</div>
-							</div>
-
-							<div class="front-content">
-								<small class="badge gl">Python</small>
-								<small class="badge gl">Open-CV</small>
-								<small class="badge gl">ML</small>
-								<div class="description">
-									<div class="title">
-										<p class="title">
-											A ML model to resolve electronic circuits drawn by hands.
-										</p>
-									</div>
-								</div>
-							</div>
+						<div class="flip-card-back">
+							<img src="img/devilin.ico" alt="Avatar">
+							Tools
+							<p class="badge gl">ElectronJS</p>
+							<p class="badge">Javascript</p>
+							<p class="badge">Gemini-Api</p>
+							<p style="font-size: 12px;"> under develoupment </p>
 						</div>
 					</div>
 				</div>
-				<div class="card" id="card3"
-					onclick="window.open('https://github.com/Seshrut/devilin','_blank').focus()">
-					<div class="content">
-						<div class="back">
-							<div class="back-content">
-								<svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
-									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px" width="50px"
-									fill="#ffffff">
 
-									<g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-
-									<g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-
-									<g id="SVGRepo_iconCarrier">
-										<img>
-									</g>
-
-								</svg>
-								<strong>Devilin</strong>
-							</div>
+				<div class="flip-card">
+					<div class="flip-card-inner"
+						onclick="window.open('https://github.com/Seshrut/AIminebot','_blank').focus()">
+						<div class="flip-card-front AOS">
+							<img src="img/aiminebot.png" alt="Avatar">
+							AIminebot
 						</div>
-						<div class="front">
-
-							<div class="img">
-								<div class="circle">
-								</div>
-								<div class="circle" id="right">
-								</div>
-								<div class="circle" id="bottom">
-								</div>
-							</div>
-
-							<div class="front-content">
-								<small class="badge gl">Javascript</small>
-								<small class="badge gl">Electron</small>
-								<small class="badge gl">LLM API</small>
-								<div class="description">
-									<div class="title">
-										<p class="title">
-											A programming bot that fixes bugs generated by itself.
-										</p>
-									</div>
-								</div>
-							</div>
+						<div class="flip-card-back">
+							<img src="img/aiminebot.png" alt="Avatar">
+							Tools
+							<p class="badge gl">ElectronJS</p>
+							<p class="badge">Javascript</p>
+							<p class="badge">PrismarineJS</p>
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 		<div id="contact">

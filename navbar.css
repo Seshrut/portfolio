@@ -118,7 +118,7 @@ body::-webkit-scrollbar-track {
 	height: 60%;
 	width: 200%;
 	display: grid;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: auto auto auto auto auto;
 	align-items: center;
 }
 
