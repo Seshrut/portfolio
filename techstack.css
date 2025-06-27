@@ -14,7 +14,7 @@
 	width: 90vw;
 
 	p {
-		box-shadow: 10px 10px 10px black;
+		box-shadow: 7px 7px 10px rgb(10, 10, 10);
 		background-color: rgba(0, 0, 0, 0.5);
 		cursor: pointer;
 		border-radius: 5px;
@@ -28,7 +28,7 @@
 	}
 
 	:hover {
-		box-shadow: 5px 5px 10px black;
+		box-shadow: 5px 5px 10px rgb(10, 10, 10);
 		padding-left: 4%;
 		padding-right: 4%;
 	}

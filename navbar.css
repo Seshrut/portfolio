@@ -5,20 +5,12 @@ p {
 	font-optical-sizing: auto;
 	font-weight: 700;
 	font-style: normal;
-	font-size: 0.9rem;
+	font-size: 1.2rem;
 	letter-spacing: 1px;
 }
 
 body {
-	background: radial-gradient(100% 100% at var(--6-x-position) var(--6-y-position), #046c81 0%, transparent), radial-gradient(100% 100% at var(--7-x-position) var(--7-y-position), #115f45 0%, transparent), #1b253b;
-
-	background-size: 120%;
-	background-repeat: no-repeat;
-	background-position: center;
-	animation-name: main;
-	animation-iteration-count: infinite;
-	animation-duration: 20s;
-	transition-timing-function: ease-in-out
+	background: linear-gradient(to left, #000428, #004e92);
 }
 
 @property --6-x-position {
@@ -81,18 +73,8 @@ body::-webkit-scrollbar-track {
 	background: black;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-
-	50% {
-		background-position: 100% 50%;
-	}
-
-	100% {
-		background-position: 0% 50%;
-	}
+h1 {
+	font-size: 3rem;
 }
 
 .navbar {
@@ -169,4 +151,12 @@ body::-webkit-scrollbar-track {
 #navspace {
 	height: 9vh;
 	width: 100%;
+}
+
+.no-select {
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-tap-highlight-color: transparent;
 }
