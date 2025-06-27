@@ -5,6 +5,7 @@
 	flex-direction: column;
 	padding-left: 2%;
 	overflow-x: hidden;
+	height: 50vh;
 }
 
 .stack {
@@ -29,7 +30,6 @@
 
 	:hover {
 		box-shadow: 5px 5px 10px black;
-		font-size: 23px;
 		padding-left: 4%;
 		padding-right: 4%;
 	}
