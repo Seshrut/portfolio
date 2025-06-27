@@ -11,6 +11,10 @@ p {
 
 body {
 	background: radial-gradient(100% 100% at var(--6-x-position) var(--6-y-position), #046c81 0%, transparent), radial-gradient(100% 100% at var(--7-x-position) var(--7-y-position), #115f45 0%, transparent), #1b253b;
+
+	background-size: 120%;
+	background-repeat: no-repeat;
+	background-position: center;
 	animation-name: main;
 	animation-iteration-count: infinite;
 	animation-duration: 20s;

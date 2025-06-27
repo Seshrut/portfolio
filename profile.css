@@ -1,26 +1,32 @@
-.profile{
-    border: solid;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    border-color: #ff134e;
-    box-shadow: 10px 10px 10px #ff134eb4;
-    img{
-        background: url("./img/WhatsApp Image 2024-08-14 at 18.19.12_4c73e3ff.jpg");
-        background-size: cover;
-        border-radius: 50%;
-        height: 100px;
-        width: 100px;
-    }
+.profile {
+	border: solid;
+	width: 16vw;
+	height: 16vw;
+	border-radius: 50%;
+	border-color: #ff134e;
+	box-shadow: 10px 10px 10px #ff134eb4;
+
+	img {
+		background: url("./img/WhatsApp Image 2024-08-14 at 18.19.12_4c73e3ff.jpg");
+		background-size: cover;
+		border-radius: 50%;
+		width: 100%;
+		aspect-ratio: 1/1;
+	}
 }
-.desc{
-    text-align: center;
+
+.desc {
+	text-align: center;
 }
-.desc>p{
-    letter-spacing: 2px;
+
+.desc>p {
+	letter-spacing: 2px;
 }
-.about{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    padding:1%;
+
+.about {
+	display: grid;
+	grid-template-columns: 20% 80%;
+	padding: 1%;
+	align-items: center;
+	justify-items: center;
 }
