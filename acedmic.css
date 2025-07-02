@@ -7,6 +7,7 @@
 	position: relative;
 	border-radius: 10px;
 	background-color: rgba(0, 0, 0, 0.5);
+	padding-bottom: 1vh;
 }
 
 #acedtxt::-webkit-scrollbar {
