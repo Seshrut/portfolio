@@ -58,18 +58,18 @@ body {
 	}
 }
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
 	width: 14px;
 }
 
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
 	border: 4px solid rgba(0, 0, 0, 0);
 	background-clip: padding-box;
 	border-radius: 9999px;
 	background-color: #ff134e9d;
 }
 
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
 	background: black;
 }
 
