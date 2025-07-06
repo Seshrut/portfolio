@@ -12,11 +12,13 @@
 	flex-direction: row;
 	margin-left: 5vw;
 	width: 90vw;
-
-	p {
+	overflow-y:scroll;
+}
+	.stack>div {
 		box-shadow: 7px 7px 10px rgb(10, 10, 10);
 		background-color: rgba(0, 0, 0, 0.5);
 		cursor: pointer;
+		white-space: nowrap;
 		border-radius: 5px;
 		padding: 1%;
 		padding-left: 2%;
@@ -27,9 +29,9 @@
 		transition: padding 0.5s cubic-bezier(0.69, -0.63, 0, 2.05), box-shadow 0.5s cubic-bezier(0.69, -0.63, 0, 2.05);
 	}
 
-	:hover {
+	.stack>div:hover {
 		box-shadow: 5px 5px 10px rgb(10, 10, 10);
 		padding-left: 4%;
 		padding-right: 4%;
 	}
-}
+
