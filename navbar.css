@@ -83,7 +83,9 @@ h1 {
 
 .navbar {
 	width: 100%;
-	height: 9vh;
+	height: max-content;
+	padding-bottom: 1vh;
+	padding-top: 1vh;
 	display: flex;
 	align-items: center;
 	border-radius: 10px;
@@ -91,31 +93,19 @@ h1 {
 	top: 0;
 	background: rgb(0, 0, 0, 0.8);
 	z-index: 4;
-}
-
-.navlogo {
-	margin-left: 5%;
-	width: 15%;
-	padding: 1%;
-
-	h1 {
-		padding: 1%;
-		border-radius: 10px;
-	}
+	backdrop-filter: blur(3px);
 }
 
 .navtabs {
-	margin-left: 5%;
 	height: 60%;
 	width: 200%;
 	display: grid;
-	grid-template-columns: auto auto auto auto auto;
+	grid-template-columns: 10% auto auto auto auto auto;
 	align-items: center;
 }
 
 .navtabs>div {
 	height: 100%;
-	width: 60%;
 	border-radius: 10px;
 	margin-left: 5%;
 	text-align: center;
@@ -125,11 +115,8 @@ h1 {
 }
 
 .navtabs>div:hover {
-	text-align: center;
 	z-index: 1;
 	height: 120%;
-	width: 80%;
-	transform: translateX(-7%);
 }
 
 .navtabs>div:active {
